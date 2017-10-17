@@ -1,0 +1,28 @@
+{
+  "name": "fontgenerator",
+  "version": "0.0.1",
+  "description": "Tool to generate font width from google font",
+  "main": "app.js",
+  "scripts": {
+    "test": "eslint lib/*.js src/*.js && nyc --reporter=html --reporter=text mocha test",
+    "serve": "http-server dist/ &",
+    "build": "mkdir -p dist && cp index.html dist/ && browserify --node app.js -o dist/bundle.js"
+  },
+  "keywords": [
+    "font",
+    "svg"
+  ],
+  "author": "Dan Takyrbashev",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "coveralls": "^3.0.0",
+    "escodegen": "^1.9.0",
+    "eslint": "^4.9.0",
+    "esprima": "^4.0.0",
+    "http-server": "^0.10.0",
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1"
+  }
+}
