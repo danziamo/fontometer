@@ -13,5 +13,5 @@ module.exports = (document, family) => {
     el.setAttribute('rel', 'stylesheet');
     el.setAttribute('href', link);
     document.getElementsByTagName('head')[0].appendChild(el);
-    document.getElementsByTagName('style')[0].innerHTML = 'body * {font-family:' + family + ';}';
+    document.getElementsByTagName('style')[0].innerHTML = 'body * { font-family: ' + family + '}';
 };

@@ -17,5 +17,7 @@ window.onload = function() {
             domInjector(document, e.target.value);
         }, 600);
     };
-    
+
 };
+
+/* global document window */

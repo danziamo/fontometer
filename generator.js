@@ -2,11 +2,11 @@
 
 const ast = require('./ast-gen.js')
     , domUtil = require('./dom-util.js')
-    , fu = require('./font-util.js')()
+    , futil = require('./font-util.js')
     ;
 
+const fu = futil();
 
-// font-inject.js
 module.exports = function(document, family) {
     const dom = domUtil(document, family);
     const svgGen = dom.createSvg(document, family);

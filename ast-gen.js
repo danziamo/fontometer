@@ -19,11 +19,6 @@ const initVar = (cst) => {
                         .concat(f.pr(
                             f.lit(e),
                             f.lit(cst.table[e])
-                            // f.oe(
-                            //     Object.keys(cst.table[e]).reduce((accr, er) => {
-                            //         return accr.concat(f.pr(f.lit(er), f.lit(1)));
-                            //     }, [])
-                            // )
                         ));
                 }, [])
             )

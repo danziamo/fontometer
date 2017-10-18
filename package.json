@@ -4,7 +4,7 @@
   "description": "Tool to generate font width from google font",
   "main": "app.js",
   "scripts": {
-    "test": "eslint lib/*.js src/*.js && nyc --reporter=html --reporter=text mocha test",
+    "test": "eslint *.js && nyc --reporter=html --reporter=text mocha test",
     "serve": "http-server dist/ &",
     "build": "mkdir -p dist && cp index.html dist/ && browserify --node app.js -o dist/bundle.js"
   },
@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@drom/eslint-config": "^0.7.0",
     "browserify": "^14.4.0",
     "coveralls": "^3.0.0",
     "escodegen": "^1.9.0",
@@ -24,5 +25,8 @@
     "http-server": "^0.10.0",
     "mocha": "^4.0.1",
     "nyc": "^11.2.1"
+  },
+  "eslintConfig": {
+    "extends": "@drom/eslint-config/eslint4/node4"
   }
 }

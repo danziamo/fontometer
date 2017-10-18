@@ -44,7 +44,7 @@ module.exports = {
     ue: (operator, argument, prefix) => ({
         type: 'UnaryExpression', operator: operator, argument: argument, prefix: prefix || true }),
     ts: (block, handler, finalizer) => ({
-        type: 'TryStatement', block: block, handler: handler , finalizer: finalizer || null }),
+        type: 'TryStatement', block: block, handler: handler, finalizer: finalizer || null }),
     cc: (param, body) => ({
         type: 'CatchClause', param: param, body: body }),
     afe: (params, body) => ({
