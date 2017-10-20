@@ -1,7 +1,7 @@
 'use strict';
 
-const gen = require('./generator.js');
-const domInjector = require('./dom-injector');
+const gen = require('./lib/generator.js');
+const domInjector = require('./lib/dom-injector');
 
 window.onload = function() {
     const generate = () => {
