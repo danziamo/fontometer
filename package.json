@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "eslint *.js && nyc --reporter=html --reporter=text mocha test",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "serve": "http-server dist/ &",
     "build": "mkdir -p dist && cp index.html dist/ && browserify --node app.js -o dist/bundle.js"
   },
