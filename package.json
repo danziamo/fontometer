@@ -1,5 +1,5 @@
 {
-  "name": "fontomer",
+  "name": "fontometer",
   "version": "0.0.1",
   "description": "Tool to generate font width from google font",
   "main": "app.js",
