@@ -7,7 +7,7 @@
     "test": "eslint lib/*.js && nyc --reporter=html --reporter=text mocha test",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "serve": "http-server dist/ &",
-    "build": "mkdir -p dist && cp index.html dist/ && browserify --node app.js -o dist/bundle.js"
+    "build": "mkdir -p dist && cp index.html dist/ && browserify app.js -o dist/bundle.js"
   },
   "keywords": [
     "font",
@@ -16,8 +16,9 @@
   "author": "Dan Takyrbashev",
   "license": "MIT",
   "dependencies": {
-      "escodegen": "^1.9.0",
-      "esprima": "^4.0.0"
+    "escodegen": "^1.9.0",
+    "esprima": "^4.0.0",
+    "postcss": "^6.0.13"
   },
   "devDependencies": {
     "@drom/eslint-config": "^0.7.0",
