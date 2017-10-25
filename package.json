@@ -6,7 +6,7 @@
   "scripts": {
     "test": "eslint lib/*.js && nyc --reporter=html --reporter=text mocha test",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "serve": "http-server dist/ &",
+    "serve": "http-server dist/",
     "build": "mkdir -p dist && cp index.html dist/ && browserify app.js -o dist/bundle.js"
   },
   "keywords": [
