@@ -65,3 +65,16 @@ exports['StalinistOne'] = function () {
     }
 }
 ```
+After that you can require fonts measurements
+```js
+const fontMeasureStalinist = require('./fonts').StalinistOne();
+const fontMeasureIndie = require('./fonts').IndieFlower();
+
+const fontSize = 32;
+const text = 'Hello World!';
+const fms = fontMeasureStalinist(fontSize);
+console.log(fms.getWidth(text), fms.getHeight(), fms.getDescent());
+```
+`getWidth` returns width of a given text
+`getHeight` returns the height of the biggest character in a font
+`getDescent` returns the height of the biggest descent of a character in a font
